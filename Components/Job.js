@@ -1,10 +1,14 @@
 import React , {useState} from "react";
+import Header from "./Header";
 
 export default function Job(){
 
     return(
+        <div style={{padding: "20px"}}>
+
+        <Header/>
         <div className="addForm">
-        <h1>Apply For a Job</h1>
+        <h1>Add an Employee</h1>
         <form>
          Full Name:<br/>
          <input type="text" id="fname" name="fname" placeholder="Enter your name"></input><br/><br/>
@@ -70,6 +74,7 @@ export default function Job(){
         
         </form>
 
+     </div>
      </div>
     )
 }
